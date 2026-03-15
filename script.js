@@ -12,6 +12,13 @@ Al secondo click la lampadina si spegne e nel bottone compare la scritta "Accend
 E così via...
 */
 
-// Get html tag with img
+// ⬇ Get html tags with img and button
 const ImgElement = document.querySelector("img")
 console.log(ImgElement)
+const ButtonElement = document.querySelector("button")
+console.log(ButtonElement)
+
+// 🖱 Connect button click to function fot lamp and text change
+ButtonElement.addEventListener("click",ChangeLampStaus())
+
+// 💡 Definition function to change lamp status and text in button
