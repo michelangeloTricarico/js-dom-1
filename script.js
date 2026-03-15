@@ -19,6 +19,17 @@ const ButtonElement = document.querySelector("button")
 console.log(ButtonElement)
 
 // 🖱 Connect button click to function fot lamp and text change
-ButtonElement.addEventListener("click",ChangeLampStaus())
+ButtonElement.addEventListener("click",ChangeLampStaus)
 
 // 💡 Definition function to change lamp status and text in button
+function ChangeLampStaus(){
+    if (ButtonElement.innerHTML == "Accendi"){
+        ButtonElement.innerHTML = "Spegni"
+        console.log(ButtonElement.innerHTML)
+    }
+    else{
+        ButtonElement.innerHTML = "Accendi"
+        console.log(ButtonElement.innerHTML)
+    }
+
+}
