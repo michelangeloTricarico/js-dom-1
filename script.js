@@ -25,11 +25,15 @@ ButtonElement.addEventListener("click",ChangeLampStaus)
 function ChangeLampStaus(){
     if (ButtonElement.innerHTML == "Accendi"){
         ButtonElement.innerHTML = "Spegni"
-        console.log(ButtonElement.innerHTML)
+        //console.log(ButtonElement.innerHTML)
+        ImgElement.src = "./img/yellow_lamp.png"
+        ImgElement.style.marginLeft = "-2.5rem"
     }
     else{
         ButtonElement.innerHTML = "Accendi"
-        console.log(ButtonElement.innerHTML)
+        //console.log(ButtonElement.innerHTML)
+        ImgElement.src = "./img/white_lamp.png"
+        ImgElement.style.marginLeft = "2.5rem"
     }
 
 }
