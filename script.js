@@ -13,27 +13,27 @@ E così via...
 */
 
 // ⬇ Get html tags with img and button
-const ImgElement = document.querySelector("img")
-console.log(ImgElement)
-const ButtonElement = document.querySelector("button")
-console.log(ButtonElement)
+const imgElement = document.querySelector("img")
+console.log(imgElement)
+const buttonElement = document.querySelector("button")
+console.log(buttonElement)
 
 // 🖱 Connect button click to function fot lamp and text change
-ButtonElement.addEventListener("click",ChangeLampStaus)
+buttonElement.addEventListener("click",ChangeLampStaus)
 
 // 💡 Definition function to change lamp status and text in button
 function ChangeLampStaus(){
-    if (ButtonElement.innerHTML == "Accendi"){
-        ButtonElement.innerHTML = "Spegni"
-        //console.log(ButtonElement.innerHTML)
-        ImgElement.src = "./img/yellow_lamp.png"
-        ImgElement.style.marginLeft = "-2.5rem"
+    if (buttonElement.innerHTML == "Accendi"){
+        buttonElement.innerHTML = "Spegni"
+        //console.log(buttonElement.innerHTML)
+        imgElement.src = "./img/yellow_lamp.png"
+        imgElement.style.marginLeft = "-2.5rem"
     }
     else{
-        ButtonElement.innerHTML = "Accendi"
-        //console.log(ButtonElement.innerHTML)
-        ImgElement.src = "./img/white_lamp.png"
-        ImgElement.style.marginLeft = "2.5rem"
+        buttonElement.innerHTML = "Accendi"
+        //console.log(buttonElement.innerHTML)
+        imgElement.src = "./img/white_lamp.png"
+        imgElement.style.marginLeft = "2.5rem"
     }
 
 }
